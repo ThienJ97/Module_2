@@ -48,3 +48,42 @@ BT3: Tìm giá trị nhỏ nhất của mảng
 BT4: Thêm phần tử vào mảng
 BT5: Xóa phần tử khỏi mảng
 BT6: Gộp 2 mảng a, b lại với nhau
+
++ Lớp Wrapper trong java
+
+Từ J2SE 5.0, tính năng autoboxing và unboxing chuyển đổi kiểu dữ liệu nguyên thủy thành kiểu đối tượng 
+và từ đối tượng thành kiểu dữ liệu nguyên thủy một cách tự động. 
+Sự chuyển đổi tự động kiểu dữ liệu nguyên thủy thành kiểu đối tượng 
+được gọi là autoboxing và ngược lại được gọi là unboxing.
+
+Trong java, có 8 lớp Wrapper chúng được thiết kế trong gói java.lang.
+Nguyên Thủy: boolean  char      byte  short   int     long   float   double
+                ↓       ↓         ↓     ↓      ↓       ↓      ↓       ↓
+Kiểu Wrapper:Boolean  Character Byte  Short  Integer  Long   Float  Double
+
+ví dụ:
+public class WrapperExample1 {
+    public static void main(String args[]) {
+        // Đổi int thành Integer
+        int a = 20;
+        Integer i = Integer.valueOf(a);  // đổi int thành Integer
+        Integer j = a;  // autoboxing, tự động đổi int thành Integer trong nội bộ trình biên dịch
+ 
+        System.out.println(a + " " + i + " " + j);
+    }
+}
+
++ Truyền tham trị trong Java
+
+ .Truyền một giá trị cho phương thức, được gọi là truyền tham trị
+ .Việc thay đổi giá trị chỉ có hiệu lực trong phương thức được gọi, không có hiệu lực bên ngoài phương thức.
+
+ .Trong Java, truyền tham trị dành cho các tham số có kiểu dữ liệu nguyên thủy: 
+   byte, short, int, long, float, double, boolean, char.
+
++ Truyền tham chiếu trong Java
+
+ .Trong Java, khi gọi một phương thức và truyền một tham chiếu cho phương thức, được gọi là truyền tham chiếu. 
+ Việc thay đổi giá trị của biến tham chiếu bên trong phương thức làm thay đổi giá trị của nó.
+
+ .Trong Java, tất các phương thức có tham số là biến có kiểu là các lớp (class) đều là kiểu tham chiếu.

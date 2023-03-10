@@ -27,6 +27,10 @@ public class Array {
                 case 3:
                     System.out.printf("Số %s là số lớn nhất trong mảng \n",maxValue(array));
                     break;
+                case 4:
+                    System.out.printf("Thêm phần tử vào mảng \n");
+                    addElement(array);
+                    break;
             }
             checkActionMenu = true;
         }while (checkActionMenu);
@@ -63,8 +67,18 @@ public class Array {
         return max;
     }
     //Thêm phần tử vào mảng
-//    public static int addElement(int[] arr){
-//
-//    }
+    public static int[] addElement(int[] arr){
+        //tạo một mảng giả có độ dài bằng mảng chính cộng thêm 1
+        int[] tempArr = new int[arr.length + 1];
+        //sao chép mảng chính sang mảng giả
+        for (int i = 0;i < arr.length;i++){
+            tempArr[i] = arr[i];
+        }
+        //thêm phần tử mới vào mảng
+        tempArr[arr.length] = 17;
+        //gán lại mảng giả vào mảng chính
+        arr = tempArr;
+        return arr;
+    }
 
 }
