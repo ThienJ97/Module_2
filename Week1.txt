@@ -1,0 +1,42 @@
+9/3/23
++Sử dụng vòng lặp:
+  1.Cú pháp:
+    for (initial-action;loop-continuation-condition;action-after-each-iteration){ 
+              statement(s);
+    }
+  2.vd: in ra bảng cửu chương 5.
+
+ for (int i = 1; i <= 10; i++){
+ int product = 5 *i;
+ System.out.println("5 x " + i + " = " + product);
+ }
+
++Sử dụng vòng lặp do-while
+ 1.Cú pháp:
+
+ do {
+ statements(s);
+ } while (loop-continuation-condition);
+
+ 2.vd:• Tính tổng các số nguyên:
+• Tính tổng của cácsố được nhập vào từ bàn phím
+• Nếu nhập vào số 0 thì kết thúc chương trình
+
+ int sum = 0;
+ int number;
+ Scanner scanner = new Scanner(System.in);
+ do{
+ System.out.print("Enter anumber: "); 
+ number = scanner.nextInt();
+ sum += number;
+ } while (number != 0); 
+ System.out.println("The sum is: " + sum);
+
+10/03/23
+
++Khai báo mảng: 
+ ví dụ:
+	int [] numbers = new int[5];		// khởi tạo 1 mảng gồm 5 phần tử với giá trị mặt định là 0
+	int[] numbers = {1, 7, 5, 1}; 		// khai báo nhanh 1 mảng
+
++Độ dài mảng: numbers[i]
