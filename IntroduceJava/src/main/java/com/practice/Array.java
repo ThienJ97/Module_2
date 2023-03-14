@@ -28,8 +28,8 @@ public class Array {
                     System.out.printf("Số %s là số lớn nhất trong mảng \n",maxValue(array));
                     break;
                 case 4:
-                    System.out.printf("Thêm phần tử vào mảng \n");
-                    addElement(array);
+                    System.out.printf("Thêm phần tử vào mảng \n",addElement(array));
+
                     break;
             }
             checkActionMenu = true;
@@ -75,7 +75,7 @@ public class Array {
             tempArr[i] = arr[i];
         }
         //thêm phần tử mới vào mảng
-        tempArr[arr.length] = 17;
+        tempArr[tempArr.length] = 17;
         //gán lại mảng giả vào mảng chính
         arr = tempArr;
         return arr;
