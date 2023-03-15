@@ -1,9 +1,17 @@
 package com.practice;
-import java.sql.Date;
-import java.util.Locale;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Test {
     public static void main(String[] args) {
-        Date data = new Date(0);
-        System.out.printf(Locale.GERMANY, "Ngày giờ hiện tại: %tc\n", data);
+        ArrayList<Integer> b = new ArrayList<>();
+        b.add(15);
+        b.add(26);
+        b.addAll(Arrays.asList(new Integer[]{2,5,7,}));
+        b.add(3,5);
+
+        System.out.println("Số lượng phan tử = " + b.size());
+
+        b.forEach(v -> System.out.printf("%d\t",v));
     }
 }

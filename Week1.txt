@@ -1,4 +1,4 @@
-9/3/23
+/-----------------------------------------------------------------------------------9/03/23-----------------------------------------------------------------------------------------------\
 +Sử dụng vòng lặp:
   1.Cú pháp:
     for (initial-action;loop-continuation-condition;action-after-each-iteration){ 
@@ -32,8 +32,7 @@
  } while (number != 0); 
  System.out.println("The sum is: " + sum);
 
-10/03/23
-
+/-----------------------------------------------------------------------------------10/03/23-----------------------------------------------------------------------------------------------\
 +Khai báo mảng: 
  ví dụ:
 	int [] numbers = new int[5];		// khởi tạo 1 mảng gồm 5 phần tử với giá trị mặt định là 0
@@ -157,7 +156,7 @@ System.out.printf("The value of pi is approximately %e", pi);//The value of pi i
 . %%: Dấu phần trăm
 . \%: Dấu phần trăm
 
-14/03/23
+/-----------------------------------------------------------------------------------14/03/23-----------------------------------------------------------------------------------------------\
 • Từ khoá class được sử dụng để khai báo lớp
 +Cú pháp khai báo lớp:
 
@@ -184,6 +183,7 @@ System.out.printf("The value of pi is approximately %e", pi);//The value of pi i
 nó tạo cho mình 1 phương thức khởi tạo k tham số(và khởi tạo các thuộc tính có giá trị mặc định) 
 
 +Cú pháp khai báo thuộc tính:
+
 [AccessModifier] KieuDuLieu tênThuộcTính;
 
 +Phương thức khởi tạo là phương thức dùng để tạo đối tượng
@@ -227,3 +227,56 @@ nó tạo cho mình 1 phương thức khởi tạo k tham số(và khởi tạo 
                     return this.name;
                     }
                     }
+/-----------------------------------------------------------------------------------15/03/23-----------------------------------------------------------------------------------------------\
++Thuộc tính và Phương thức tĩnh(static)
+ .Thuộc tính tĩnh và phương thức tĩnh(static) dùng chung cho tất cả đối tượng lớp
+ 
+ . Chúng được gọi sử dụng thông qua tên lớp mà không cần tạo đối tượng.
+
+ . Trong phương thức tĩnh chỉ truy xuất được các thành viên của lớp.
+
+ . Để khai báo thuộc tính hay phương thức tĩnh dùng từ khóa static trước kiểu dữ liệu.
+
+Ví dụ:
+class PhanSo {
+	private static int soLuongPs = 0;
+	
+	public static int timUcln (int a, int b) {
+
+	}
+}
+
+gọi phương thức timUcln() bằng cách:
+
+int ucln = PhanSo.timUcln(12,8);
+
++ Phân biệt Private, Public, Protected ở trong Java
+
+ . private : khi khai báo hành vi là private thì phạm vi chỉ trong phương thức đó mà thôi.
+
+ . public: khi khai báo hành vi là public thì bất kì ở đâu bên ngoài class có thể truy cập vào phương thức đó.
+
+ . protected: phạm vi truy cập protected là trong cùng 1 package.
+
++ Nested class (lớp trong) là một lớp được định nghĩa bên trong một lớp khác. Nó được định nghĩa trong phạm vi của lớp bao bọc bên ngoài và có thể truy cập vào các biến thành viên và phương thức của lớp bao bọc.
+ .Có hai loại nested class trong Java
+  1.Non-static nested class (còn gọi là inner class phi tĩnh): Là lớp được khai báo bên trong một lớp khác và không được khai báo là static.
+VD:public class OuterClass {
+    private int x;
+    
+    class InnerClass {
+        public void display() {
+            System.out.println("The value of x is " + x);
+        }
+    }
+}
+ 2. Static nested class (còn gọi là inner class tĩnh): Là lớp được khai báo bên trong một lớp khác và được khai báo là static.
+VD:public class OuterClass {
+    private static int x;
+    
+    static class InnerClass {
+        public void display() {
+            System.out.println("The value of x is " + x);
+        }
+    }
+}
