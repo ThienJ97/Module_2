@@ -1,3 +1,4 @@
+git pull origin main
 /-----------------------------------------------------------------------------------9/03/23-----------------------------------------------------------------------------------------------\
 +Sử dụng vòng lặp:
   1.Cú pháp:
@@ -174,8 +175,10 @@ System.out.printf("The value of pi is approximately %e", pi);//The value of pi i
 	• object_name là tên biến chứa tham chiếu trỏ đến đối tượng.
 
 +Đặc điểm phương thức khởi tạo:
+
   . Tên phương thức Trùng Với Tên Lớp
   . Không Có kiểu dữ liệu trả về
+
 +cú pháp:
 [AccessModifier] TênLớp([ThamSố]);
 
@@ -258,7 +261,8 @@ int ucln = PhanSo.timUcln(12,8);
 
  . protected: phạm vi truy cập protected là trong cùng 1 package.
 
-+ Nested class (lớp trong) là một lớp được định nghĩa bên trong một lớp khác. Nó được định nghĩa trong phạm vi của lớp bao bọc bên ngoài và có thể truy cập vào các biến thành viên và phương thức của lớp bao bọc.
++ Nested class (lớp trong) là một lớp được định nghĩa bên trong một lớp khác. Nó được định nghĩa trong phạm vi của lớp bao bọc bên ngoài 
+và có thể truy cập vào các biến thành viên và phương thức của lớp bao bọc.
  .Có hai loại nested class trong Java
   1.Non-static nested class (còn gọi là inner class phi tĩnh): Là lớp được khai báo bên trong một lớp khác và không được khai báo là static.
 VD:public class OuterClass {
@@ -280,3 +284,87 @@ VD:public class OuterClass {
         }
     }
 }
+/-----------------------------------------------------------------------------------16/03/23-----------------------------------------------------------------------------------------------\
++ Kế thừa là cho phép một lớp con (subclass) được tạo ra từ một lớp cha (superclass) đã tồn tại, và lớp con sẽ thừa hưởng tất cả các thuộc tính và phương thức của lớp cha đó.
+ví dụ:
+class Animal {
+    void move() {
+        System.out.println("Con vật đang di chuyển");
+    }
+}
+
+class Bird extends Animal {
+    void move() {
+        System.out.println("Con chim đang bay");
+    }
+}
+//Lớp con là Bird, kế thừa phương thức move() của lớp cha Animal, nhưng lại định nghĩa lại phương thức này để biểu diễn hành động di chuyển của chim là bay
+
++ @Override là việc định nghĩa lại một phương thức đã có trong lớp cha trên lớp con, với nội dung và chức năng khác hơn so với phương thức trong lớp cha
+ví dụ:
+class Animal {
+    void move() {
+        System.out.println("Con vật đang di chuyển");
+    }
+}
+
+class Bird extends Animal {
+    @Override
+    void move() {
+        System.out.println("Con chim đang bay");
+    }
+}
+
+// "extends" là từ khóa trong Java được sử dụng để kế thừa các thuộc tính và phương thức từ một lớp khác 
+
++ "Overloading" trong Java là việc định nghĩa lại một phương thức có cùng tên trong cùng một lớp, nhưng với danh sách tham số đầu vào khác nhau
+
+. Các quy tắc của overloading trong Java:
+
+  1. Các phương thức phải có cùng tên.
+
+  2. Các phương thức phải khác nhau về danh sách tham số (số lượng, kiểu dữ liệu hoặc thứ tự).
+
+  3. Các phương thức có thể khác nhau về kiểu trả về.
+
+ví dụ:
+class Calculator {
+    int add(int x, int y) {
+        return x + y;
+    }
+
+    double add(double x, double y) {
+        return x + y;
+    }
+
+    int add(int x, int y, int z) {
+        return x + y + z;
+    }
+}
+
++ "final" là một từ khóa được sử dụng để chỉ định rằng một biến, một phương thức hoặc một lớp không thể thay đổi giá trị hoặc bị kế thừa.
+
+ví dụ:
+final int B = 100;//biến B được khai báo là final, do đó giá trị của nó không thể được thay đổi sau khi đã được gán giá trị ban đầu.
+
++Trong Java, "toString()" là một phương thức được định nghĩa trong lớp Object, nó trả về một chuỗi biểu diễn đối tượng. 
+
+Phương thức này được sử dụng để cung cấp một chuỗi mô tả đối tượng, phục vụ cho việc hiển thị thông tin của đối tượng ra ngoài cho người dùng hoặc để ghi vào file hoặc cơ sở dữ liệu.
+
+ví dụ:
+public class HocSinh {
+    private String name;
+    private int age;
+
+    public HocSinh(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "HocSinh[name=" + name + ", age=" + age + "]";
+    }
+}
+
++ Đa hình cho phép một lớp cha có thể có nhiều lớp con khác nhau, và các lớp con đó có thể định nghĩa lại các phương thức của lớp cha để thực hiện các hành động khác nhau.

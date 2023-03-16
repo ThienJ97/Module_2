@@ -51,7 +51,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.QuadraticEquation">
+  <component name="RunManager">
     <configuration name="Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.practice.Array" />
       <module name="IntroduceJava" />
@@ -80,8 +80,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.QuadraticEquation" />
         <item itemvalue="Application.Array" />
+        <item itemvalue="Application.QuadraticEquation" />
       </list>
     </recent_temporary>
   </component>
@@ -97,7 +97,9 @@
       <workItem from="1678689406695" duration="7247000" />
       <workItem from="1678777004471" duration="1635000" />
       <workItem from="1678781524866" duration="2711000" />
-      <workItem from="1678844162440" duration="3145000" />
+      <workItem from="1678844162440" duration="23513000" />
+      <workItem from="1678892729857" duration="6638000" />
+      <workItem from="1678928811546" duration="4560000" />
     </task>
     <servers />
   </component>
@@ -107,6 +109,9 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/IntroduceJava$printStars.ic" NAME="printStars Coverage Results" MODIFIED="1678413575063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.practice.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/IntroduceJava$Rectangle.ic" NAME="Rectangle Coverage Results" MODIFIED="1678930669095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>BasicExercises.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/IntroduceJava$sumArr.ic" NAME="sumArr Coverage Results" MODIFIED="1678417027881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.practice.*</FILTER>
