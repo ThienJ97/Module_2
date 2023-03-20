@@ -51,13 +51,26 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Rectangle">
     <configuration name="Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.practice.Array" />
       <module name="IntroduceJava" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bird" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="inheritance.Bird" />
+      <module name="IntroduceJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="inheritance.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,8 +91,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Rectangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="inheritance.Rectangle" />
+      <module name="IntroduceJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="inheritance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Rectangle" />
+        <item itemvalue="Application.Bird" />
         <item itemvalue="Application.Array" />
         <item itemvalue="Application.QuadraticEquation" />
       </list>
@@ -99,7 +127,8 @@
       <workItem from="1678781524866" duration="2711000" />
       <workItem from="1678844162440" duration="23513000" />
       <workItem from="1678892729857" duration="6638000" />
-      <workItem from="1678928811546" duration="4560000" />
+      <workItem from="1678928811546" duration="13685000" />
+      <workItem from="1679285727316" duration="3322000" />
     </task>
     <servers />
   </component>

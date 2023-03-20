@@ -314,6 +314,8 @@ class Bird extends Animal {
         System.out.println("Con chim đang bay");
     }
 }
++ Khi override: phương thức phải cùng tên, cùng số lượng và cùng kiểu của tham số
+		+ Access modifier lớn hơn hoặc bằng Access modifier phương thức của lớp cha
 
 // "extends" là từ khóa trong Java được sử dụng để kế thừa các thuộc tính và phương thức từ một lớp khác 
 
@@ -368,3 +370,52 @@ public class HocSinh {
 }
 
 + Đa hình cho phép một lớp cha có thể có nhiều lớp con khác nhau, và các lớp con đó có thể định nghĩa lại các phương thức của lớp cha để thực hiện các hành động khác nhau.
+/-----------------------------------------------------------------------------------20/03/23-----------------------------------------------------------------------------------------------\
++ Trong Java, không được phép đa kế thừa (multiple inheritance) vì một số lý do sau đây:
+ . Đa kế thừa có thể đẫn đến xung đột tên phương thức
+
+ . Phức tạp hóa mã nguồn và thiết kế
+
+ . Nguy cơ lỗi phân vùng
+
++ Tính trừu tượng là ẩn các chi tiết triển khai cụ thể và chỉ hiển thị các tính năng cho người dùng.
+
++ Lớp trừu tượng là một lớp khai báo với từ khóa abstract.Nó cần kế thừa và phương thức của nó được triển khai.
+Nó không được khởi tạo.
+
++ Phương thức Abstract:
+ 
+Public abstract class LopTruuTuong {
+	public abstract void phuongThucTruuTuong();
+}
+
++ Khi nào sử dung abstract class:
+
+ . Chia sẻ code giữa các lớp trong quan hệ kế thừa.
+
+ . Muốn lớp này cũng chứa cả các thành phần private,protected.
+
+ . Muốn lớp này chứa cả những thành phân khác static,final.
+
++ khi nào sử dung interface:
+
+ . Định nghĩa các chức năng, các giá trị chung cho các lớp không có mối liên hệ với nhau.
+
+ . Muốn tận dụng lợi ích của đa kế thừa.
+
+ . Muốn xác định các hành vi nhưng không quan tâm lớp nào sẽ thực thi chúng.
+
++ So sánh abstract class với interface:
+
+ . Kiểu các phương thức: interface chỉ có các phương thức abstract, từ JV 8 có thêm dejault,static; abstract class còn có tất cả các loại phương thức khác.
+
+ . Các biến final : trong interface các biến mặc định là final,abs class có thể final hoặc không.
+
+ . Các kiểu biến: interface chỉ có các biến static và final.Abstract class có cả static,non-static,final,non-final.
+
+ . Thực thi: interface được thực thi bởi keyword implements,abstract class sử dụng extends.
+
+ . Kế thừa: một interface chỉ có thể extends từ các interface khác,một abstract có thể extends một lớp khác và implement nhiều interface.
+
+ . Khả năng truy cập: mặc định các thành phần dữ liệu,phương thức của interface là public,cong abstract có thể có tất cả các thành phần như private,protected.
+
