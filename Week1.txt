@@ -76,6 +76,7 @@ public class WrapperExample1 {
 + Truyền tham trị trong Java
 
  .Truyền một giá trị cho phương thức, được gọi là truyền tham trị
+
  .Việc thay đổi giá trị chỉ có hiệu lực trong phương thức được gọi, không có hiệu lực bên ngoài phương thức.
 
  .Trong Java, truyền tham trị dành cho các tham số có kiểu dữ liệu nguyên thủy: 
@@ -229,7 +230,7 @@ nó tạo cho mình 1 phương thức khởi tạo k tham số(và khởi tạo 
                     public String getName(){
                     return this.name;
                     }
-                    }
+             }
 /-----------------------------------------------------------------------------------15/03/23-----------------------------------------------------------------------------------------------\
 +Thuộc tính và Phương thức tĩnh(static)
  .Thuộc tính tĩnh và phương thức tĩnh(static) dùng chung cho tất cả đối tượng lớp

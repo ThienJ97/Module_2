@@ -15,6 +15,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -51,7 +52,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Rectangle">
+  <component name="RunManager">
     <configuration name="Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.practice.Array" />
       <module name="IntroduceJava" />
@@ -106,9 +107,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Array" />
         <item itemvalue="Application.Rectangle" />
         <item itemvalue="Application.Bird" />
-        <item itemvalue="Application.Array" />
         <item itemvalue="Application.QuadraticEquation" />
       </list>
     </recent_temporary>
@@ -128,7 +129,10 @@
       <workItem from="1678844162440" duration="23513000" />
       <workItem from="1678892729857" duration="6638000" />
       <workItem from="1678928811546" duration="13685000" />
-      <workItem from="1679285727316" duration="3322000" />
+      <workItem from="1679285727316" duration="4306000" />
+      <workItem from="1679360906861" duration="14273000" />
+      <workItem from="1679448028040" duration="7056000" />
+      <workItem from="1679534988934" duration="4920000" />
     </task>
     <servers />
   </component>
