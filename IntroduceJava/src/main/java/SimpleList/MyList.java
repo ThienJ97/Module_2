@@ -36,5 +36,20 @@ public class MyList<E> {
                 //ép kiểu E cho elements[i]
                 return (E) elements[i];
         }
+        public void remove(int index ,int num){
+                for (int i = index;i<size-num;i++){
+                        elements[i]=elements[i + num];
+                        elements[i + num]=null;
+                }
+
+                size = size -num;
+        }
+        public MyList<Integer> subArr(int from,int end){
+                MyList<Integer> arrNew = new MyList<>();
+                for (int i = from;i<end;i++){
+                        arrNew.add((Integer) elements[i]);
+                }
+                return arrNew;
+        }
 
 }
